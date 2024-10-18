@@ -3,27 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Main Page</title>
-    <link rel="stylesheet" href="common.css" />
-    <!-- 공통 스타일 적용 -->
-    <link rel="stylesheet" href="main.css" />
-    <!-- 메인 페이지 전용 CSS -->
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <!-- 로그인 페이지 전용 CSS -->
   </head>
   <body>
     <header>
-      <nav>
-        <a href="profile.html">Profile</a>
-        <a href="projects.html">Projects</a>
-        <a href="login.html">Login</a>
-      </nav>
+      <h1>포트폴리오 저장소</h1>
     </header>
 
-    <section class="main-container">
-      <h1>Welcome to My Portfolio</h1>
+    <section class="login-container">
+      <form id="loginForm" class="login-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="studentId"
+            name="studentId"
+            placeholder="학번"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="dob"
+            name="dob"
+            placeholder="생년월일 (YYYYMMDD)"
+            required
+          />
+        </div>
+
+        <button type="submit" class="login-btn">로그인</button>
+      </form>
     </section>
 
     <footer>
       <p>&copy; 2024 My Portfolio</p>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
