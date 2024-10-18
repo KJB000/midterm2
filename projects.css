@@ -1,0 +1,61 @@
+/* 프로젝트 페이지 전용 스타일 */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* 파란색 버튼 스타일 */
+.view-code-btn {
+  padding: 10px 20px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.view-code-btn:hover {
+  background-color: #007bb5;
+}
+
+.example-code {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 3px solid #007bb5;
+  white-space: pre-wrap;
+  display: none; /* 기본적으로 숨김 */
+}

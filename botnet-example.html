@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botnet Development Example Code</title>
+    <!-- Prism.js 기본 스타일 시트 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.min.css"
+    />
+    <!-- Prism.js 스크립트 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="projects.html">Back to Projects</a>
+      </nav>
+    </header>
+
+    <section class="container">
+      <h1>Botnet Development Example Code</h1>
+      <!-- 코드를 보기 좋게 하이라이팅하는 pre 태그 -->
+      <pre><code class="language-python">
+# Botnet 개발 예시 코드
+# 이 코드는 간단한 봇넷 제어 시뮬레이션을 보여줍니다.
+
+# 봇넷 시작 함수
+def start_botnet():
+    print("Starting botnet...")
+
+    # 제어할 봇들의 리스트
+    bots = ["bot1", "bot2", "bot3", "bot4", "bot5"]
+
+    # 각 봇에 명령 전송
+    for bot in bots:
+        control_bot(bot)
+
+    # 봇넷 종료
+    print("Botnet shutting down.")
+
+# 특정 봇을 제어하는 함수
+def control_bot(bot_name):
+    print(f"Sending command to {bot_name}")
+    # 실제 명령을 봇에 전송하는 코드는 보안 연구 목적으로 생략
+    print(f"{bot_name} has received the command.")
+
+# 봇넷 실행
+if __name__ == "__main__":
+    start_botnet()
+    </code></pre>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 My Portfolio</p>
+    </footer>
+  </body>
+</html>
