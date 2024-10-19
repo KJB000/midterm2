@@ -22,6 +22,7 @@ if (logoutBtn) {
   logoutBtn.addEventListener('click', function () {
     sessionStorage.removeItem('isLoggedIn')
     sessionStorage.removeItem('studentId')
+
     window.location.href = 'index.html'
   })
 }
