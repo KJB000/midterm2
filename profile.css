@@ -69,14 +69,34 @@ p {
   margin-bottom: 30px;
 }
 
-video {
-  border-radius: 10px;
-  margin-top: 20px;
-}
-
 footer {
   text-align: center;
   padding: 20px;
   background-color: white;
   border-top: 1px solid #dbdbdb;
+}
+
+.logo-btn {
+  display: inline-block;
+  padding: 5px;
+  margin: 0 10px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+.logo-btn img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
